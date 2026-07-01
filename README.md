@@ -1,12 +1,10 @@
-# think-skills
+# hong-skills
 
 [中文](README.CN.md)
 
 `hong-skills` is a personal collection of AI agent skills distilled from everyday work and life. The name `hong` is inspired by macro commands: a powerful yet easy-to-use shortcut pattern for reusable capability, while also carrying a sense of breadth and ambition.
 
 The README is the repository index. Detailed notes for each skill live in [`docs/`](docs/).
-
-## Current Skills
 
 ## Current Skills
 

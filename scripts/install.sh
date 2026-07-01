@@ -3,7 +3,7 @@ set -euo pipefail
 
 usage() {
   cat <<'EOF'
-Install think-skills into a local AI agent skills directory.
+Install hong-skills into a local AI agent skills directory.
 
 Usage:
   scripts/install.sh [options]
