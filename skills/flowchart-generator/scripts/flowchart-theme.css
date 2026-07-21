@@ -1,0 +1,165 @@
+/* flowchart-generator theme — closer to OpenAI reference style */
+
+/* Global font */
+#my-svg {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 15px !important;
+}
+
+/* --- Nodes --- */
+#my-svg .node rect,
+#my-svg .node circle,
+#my-svg .node polygon,
+#my-svg .node path {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.06));
+}
+
+#my-svg .node .label,
+#my-svg .nodeLabel {
+  color: #111827 !important;
+  fill: #111827 !important;
+  font-weight: 500 !important;
+}
+
+#my-svg .nodeLabel p {
+  color: #111827 !important;
+  margin: 0 !important;
+}
+
+/* --- Subgraphs / clusters --- */
+#my-svg .cluster rect {
+  rx: 24px !important;
+  ry: 24px !important;
+}
+
+#my-svg .cluster .nodeLabel,
+#my-svg .cluster-label .nodeLabel {
+  font-weight: 600 !important;
+  white-space: nowrap !important;
+  width: auto !important;
+  overflow: visible !important;
+}
+
+#my-svg .cluster-label foreignObject {
+  width: auto !important;
+  overflow: visible !important;
+}
+
+/* --- Edges / arrows --- */
+#my-svg .flowchart-link.edge-pattern-solid {
+  stroke: #3B82F6 !important;
+}
+
+#my-svg .flowchart-link.edge-pattern-dashed {
+  stroke: #10B981 !important;
+  stroke-dasharray: 5, 5 !important;
+}
+
+#my-svg .arrowMarkerPath {
+  fill: #3B82F6 !important;
+  stroke: #3B82F6 !important;
+}
+
+/* --- Edge labels --- */
+#my-svg .edgeLabel {
+  background-color: #ffffff !important;
+}
+
+#my-svg .edgeLabel .labelBkg {
+  background-color: #ffffff !important;
+  fill: #ffffff !important;
+  opacity: 1 !important;
+  /* 给短标签留出徽章空间，避免文字被截断 */
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+
+#my-svg .edgeLabel .label {
+  color: #374151 !important;
+  font-size: 13px !important;
+}
+
+#my-svg .edgeLabel p {
+  background-color: #ffffff !important;
+  color: #374151 !important;
+  margin: 0 !important;
+}
+
+/* --- Step badges (use <span class='badge'>N</span> in edge label) ---
+   Must be more specific than the generic edge-label rules above.
+   We also define global .badge rules so Mermaid measures them correctly
+   before inserting into the SVG. */
+.badge,
+.badge * {
+  background-color: #3B82F6 !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+  padding: 2px 6px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  margin-right: 4px !important;
+  display: inline-block !important;
+  text-align: center !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  line-height: 16px !important;
+  vertical-align: middle !important;
+}
+
+.badge-green,
+.badge-green * {
+  background-color: #10B981 !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+  padding: 2px 6px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  margin-right: 4px !important;
+  display: inline-block !important;
+  text-align: center !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  line-height: 16px !important;
+  vertical-align: middle !important;
+}
+
+#my-svg .edgeLabel .badge,
+#my-svg .edgeLabel .badge * {
+  background-color: #3B82F6 !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+  padding: 2px 6px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  margin-right: 4px !important;
+  display: inline-block !important;
+  text-align: center !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  line-height: 16px !important;
+  vertical-align: middle !important;
+}
+
+#my-svg .edgeLabel .badge-green,
+#my-svg .edgeLabel .badge-green * {
+  background-color: #10B981 !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+  padding: 2px 6px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  margin-right: 4px !important;
+  display: inline-block !important;
+  text-align: center !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  line-height: 16px !important;
+  vertical-align: middle !important;
+}
+
+/* --- Return path labels (green text) --- */
+#my-svg .edgeLabel .return-text,
+#my-svg .edgeLabel .return-text * {
+  color: #10B981 !important;
+  font-weight: 600 !important;
+}
