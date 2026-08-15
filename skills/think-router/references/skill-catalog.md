@@ -86,6 +86,21 @@ This catalog lists the destination skills currently available in this repository
   - "Help me improve naming, structure, or complexity."
   - "What programming principle applies here?"
 
+## deep-study-coach
+
+- Directory: `skills/deep-study-coach`
+- Invocation: `$deep-study-coach`
+- Best for: substantial learning goals, ineffective-learning problems, knowledge-to-practice gaps, or existing learning work where the user wants to verify understanding, improve transfer, diagnose failure, or maintain progress across sessions.
+- Method: a staged deep-study cycle covering preparation, active input, closed-source reflection, near-to-far transfer, output or practice, feedback diagnosis, and retrieval-based review.
+- Interaction style: evidence-based learning coaching. The assistant selects full-cycle, stage-focus, diagnosis, or lightweight mode; assigns one bounded task at a time; checks stage evidence; and routes failures to the earliest stage that can repair them.
+- Use when the user says things like:
+  - "Help me design and execute a learning plan, not just list resources."
+  - "How can I tell whether I genuinely understand this topic?"
+  - "I know the definition but cannot apply it in real situations."
+  - "Take me through the reflection or transfer stage for what I just learned."
+  - "Diagnose why my learning is not turning into performance."
+- Do not use for neural-network or machine-learning requests merely because they contain the phrase "deep learning."
+
 ## Catalog Maintenance
 
 When a new skill should be discoverable through `think-router`, update this catalog with:

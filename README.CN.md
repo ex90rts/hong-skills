@@ -17,6 +17,10 @@ README 只作为仓库索引使用。每个 skill 的详细说明放在 [`docs/`
 - [`deepthink-5so`](docs/deepthink-5so.md): 需要连续追问“所以呢”，推演某个现象最终可能导致什么结果。
 - [`system-thinking`](docs/system-thinking.md): 需要将问题看作一个系统，分析变量、因果链、反馈循环、延迟和相关方。
 
+### 学习 Skills
+
+- [`deep-study-coach`](docs/deep-study-coach.md): 需要设计并执行深度学习闭环、检验是否真正理解、把知识迁移到实践，或诊断无效学习应该返回哪个阶段修正。
+
 ### 编程 Skills
 
 - [`coding-art`](docs/coding-art.md): 写代码、代码评审、重构、模块设计、调试或优化时，需要有原则的工程判断。
@@ -107,6 +111,10 @@ Use $deepthink-5so to explore what this phenomenon could ultimately lead to: ...
 Use $system-thinking to analyze this problem as a system: ...
 ```
 
+```text
+Use $deep-study-coach to help me learn this topic deeply and verify that I can apply it: ...
+```
+
 如果不确定该用哪个仓库 skill，先使用路由：
 
 ```text
@@ -126,6 +134,7 @@ skills/
   <skill-name>/
     SKILL.md
     references/
+    assets/
     agents/
 
 docs/
@@ -146,6 +155,7 @@ skills/
   your-skill-name/
     SKILL.md
     references/
+    assets/
     agents/
       openai.yaml
 ```

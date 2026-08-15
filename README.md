@@ -17,6 +17,10 @@ The README is the repository index. Detailed notes for each skill live in [`docs
 - [`deepthink-5so`](docs/deepthink-5so.md): Thinking / consequence inference. Use when you need to repeatedly ask "so what?" to infer what a phenomenon may eventually lead to.
 - [`system-thinking`](docs/system-thinking.md): Thinking / systems analysis. Use when you need to map variables, causal chains, feedback loops, delays, and stakeholders in a complex system.
 
+### Learning Skills
+
+- [`deep-study-coach`](docs/deep-study-coach.md): Learning method / coaching. Use when you want to design and execute a deep-study cycle, verify genuine understanding, transfer knowledge into practice, or diagnose where ineffective learning needs correction.
+
 ### Coding Skills
 
 - [`coding-art`](docs/coding-art.md): Software engineering. Use when you are writing, reviewing, refactoring, designing, debugging, or optimizing code and want principled engineering judgment.
@@ -107,6 +111,10 @@ Use $deepthink-5so to explore what this phenomenon could ultimately lead to: ...
 Use $system-thinking to analyze this problem as a system: ...
 ```
 
+```text
+Use $deep-study-coach to help me learn this topic deeply and verify that I can apply it: ...
+```
+
 If you are not sure which repository skill to use, start with:
 
 ```text
@@ -126,6 +134,7 @@ skills/
   <skill-name>/
     SKILL.md
     references/
+    assets/
     agents/
 
 docs/
@@ -146,6 +155,7 @@ skills/
   your-skill-name/
     SKILL.md
     references/
+    assets/
     agents/
       openai.yaml
 ```
