@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deep Study Coach"
+  short_description: "Build, test, and improve durable learning"
+  default_prompt: "Use $deep-study-coach to guide me through learning this topic deeply and verify that I can apply it."
